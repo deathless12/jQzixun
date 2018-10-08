@@ -241,6 +241,11 @@ $(function () {
                 ]
             }]
         });
+    $(".xiaLeft>li>a").click(function(){
+            $(this).css({
+                backgroundColor: "#282830"
+            });       
+    });
     function xianshi() {
         $.get("http://120.78.164.247:8099/manager/category/findAllCategory",function(results){
           var res = results.data;
@@ -305,7 +310,7 @@ $(function () {
         }
         $.get("http://120.78.164.247:8099/manager/category/deleteCategoryById",o,function(results){
             xianshi();
-            console.log(results)
+            // console.log(results)
         });
     });
     $(".addData").click(function(){
@@ -332,7 +337,7 @@ $(function () {
         }
         $.post("http://120.78.164.247:8099/manager/category/batchDeleteCategory",o,function(results){ 
             xianshi();
-            console.log(results)
+            // console.log(results)
         });
     });
     function userXianshi(){
@@ -376,7 +381,7 @@ $(function () {
             $(".fourContent").append(newDes);
             $(newDes).removeClass("userHide");
            });
-           console.log(userRes) 
+           // console.log(userRes) 
         })
     }
     $(".xiaLeft>li").eq(3).click(function(){
@@ -491,7 +496,7 @@ $(function () {
                 $(".myTbody2").append(newtr);
                 $(newtr).attr("class","");
              });
-          console.log(res);    
+          // console.log(res);    
         })
     }
     $(".xiaLeft>li").eq(2).click(function(){
@@ -534,7 +539,7 @@ $(function () {
             }
         }
         $.post("http://120.78.164.247:8099/manager/article/saveOrUpdateArticle",o,function(results){
-            console.log(results);
+            // console.log(results);
             zixunId=false;
             zixunXianshi();
         })
@@ -547,7 +552,7 @@ $(function () {
         }
         $.get("http://120.78.164.247:8099/manager/article/deleteArticleById",o,function(results){
             zixunXianshi();
-            console.log(results)
+            // console.log(results)
         });
     });
     var zixunId;
@@ -584,7 +589,7 @@ $(function () {
         }
         $.post("http://120.78.164.247:8099/manager/article/batchDeleteArticle",o,function(results){ 
             zixunXianshi();
-            console.log(results)
+            // console.log(results)
         });
     });
 })
