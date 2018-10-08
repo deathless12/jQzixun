@@ -1,0 +1,320 @@
+.top{
+	border: 1px solid #eee;
+}
+.topLeft{
+	background-color: #3D556D;
+	float: left;
+	text-align: center;
+	border: 1px solid #eee;
+}
+.topLeft>.logo{
+	width: 38px;
+	height: 38px;
+}
+.topLeft>span{
+	color: #fff;
+	line-height: 38px;
+	font-size: 14px;
+}
+.topRight{
+	float: left;
+	border: 1px solid #eee;
+}
+.topRight_left>i{
+	line-height: 38px;
+	font-size: 20px;
+}
+.topRight_left>i:last-child{
+	margin-left: 8px;
+	position: relative;
+}
+.topRight_left>i:last-child>sup{
+	position:absolute; 
+	left:6px;
+	top: -6px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #E05140;
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
+}
+.topRightImg img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+	display: inline-block;
+	float: left;
+}
+.topRightImg span{
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+.xiaLeft{
+	list-style: none;
+	float: left;
+	text-align: center;
+	background-color: #282830;
+	padding: 0;
+	height: 650px;
+	border: 1px solid #eee;
+}
+.xiaLeft>li{
+	position: relative;
+}
+.iconLeft{
+	position:absolute;
+	left: 25px; 
+}
+.iconRight{
+	position:absolute;
+	right: 25px; 
+}
+.xiaLeft>li>a:hover{
+	background-color: #282830;
+}
+.xiaLeft>li>a>span{
+	display: inline-block;
+	text-align: left;
+	width: 80px;
+}
+.xiaLeft>li:first-child{
+	margin-top: 30px;
+}
+.xiaRight{
+	float: left;
+	height: 650px;
+	background-color: #f5f5f5;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.shouyeLeft{
+	list-style: none;
+	float: left;
+	/*margin-left: 5px;*/
+}
+.shouyeLeft>li{
+	width: 150px;
+	height: 70px;
+	background-color: #fff;
+	margin-top: 10px;
+}
+.circleDiv{
+	width: 55px;
+	height: 55px;
+	background-color: #63ba12;
+	display: inline-block;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-left: 10px;
+	text-align: center;
+}
+.circleDiv>i{
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	font-size: 30px;
+	line-height: 30px;
+	display: inline-block;
+	margin-top: 12px;
+}
+.shouyeLeft>li>span{
+	font-size: 26px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+.circleDiv2{
+	background-color: #7b2fc0;
+}
+.circleDiv2{
+	background-color: #3bb8ec;
+}
+.shouyeZhong{
+	width: 480px;
+	height: 230px;
+	background-color: #fff;
+	margin-top: 10px;
+	float: left;
+	margin-left: 35px;
+}
+.shouyeRight{
+	list-style: none;
+	float: left;
+}
+.shouyeRight>li{
+	width: 200px;
+	height: 110px;
+	background-color: #fff;
+	margin-top: 10px;
+}
+.shouyeRight>li>div>img{
+	width: 200px;
+	height: 110px;
+}
+.shouyeXial{
+	width: 450px;
+	height: 360px;
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
+.shouyeXia1{
+	width: 470px;
+	height: 180px;
+}
+.shouyeXia2{
+	width: 470px;
+	height: 180px;
+	margin-top: 10px;
+}
+.table{
+	text-align: center;
+	margin-top: 10px;
+}
+.tankuang{
+	position: relative;
+	right: -430px;
+	height: 650px;
+	background-color: #fff;
+}
+.touxiang{
+	margin: 5px auto;
+	width: 113px;
+	height: 100px;
+}
+.touxiang>img{
+	width: 113px;
+	height: 100px;
+	border-radius: 50%;
+}
+.userContent{
+	height: 300px;
+	background-color: #fff;
+	margin-left: 60px;
+	margin-top: 20px;
+	/*overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+*/
+}
+.userHide{
+	display: none;
+}
+.des dt{
+	width: 60px;
+	color: #666;
+	margin-top: 10px;
+}
+.des dd{
+	width: 100px;
+	margin-left: 40px;
+	display: inline-block;
+	color: #666;
+	margin-top: 10px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.userAdd{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.kaiguan{
+	width: 60px;
+	height: 20px;
+	border-radius: 10%;
+	position: relative;
+	cursor: pointer;
+}
+.kaione{
+	background-color: #68B828;
+}
+.kaitwo{
+	background-color: #ccc;
+}
+.kaiguanCircle{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+}
+.kaiguan>.kaion{
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	width: 30px;
+	height: 20px;
+	color: #fff;
+	display: inline-block;
+}
+.kaiguanCircle1{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	left: 38px;
+}
+.kaiguan>.kaioff{
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 30px;
+	height: 20px;
+	color: #fff;
+	display: inline-block;
+}
+.desshan{
+	line-height: 12px;
+	margin-top: -48px;
+	margin-left: 150px;
+	font-size: 12px;
+}
+.desxiu{
+	line-height: 12px;
+	margin-top: -8px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.allbtn{
+	margin-top: 8px;
+	margin-left: 5px;
+}
+#zixunFile{
+	width: 200px;
+	height: 100px;
+}
+#zhengwen{
+	height: 100px;
+}
+.listImg_left{
+	float: left;
+	position: relative;
+}
+.listImg_right{
+	float: left;
+	position: relative;
+	margin-left: 25px;
+}
+.listImg>div{
+	width: 250px;
+	height: 100px;
+}
+.list div i{
+	font-size: 20px;
+	color: green;
+	position: absolute;
+	right: 0px;
+}
+.zixunContent{
+	height: 670px;
+	overflow: auto;
+}
+

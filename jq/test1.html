@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="test1.css">
+	<script src="bootstrap-3.3.0-dist/js/bootstrap.min.js">
+	</script>
+	<link rel="stylesheet" href="iconfont.css">
+	<script src="test1.js"></script>
+	<script src="Highcharts-4.0.1/js/highcharts.js"></script>
+	<script>
+		$(function(){
+
+			
+			// var person = {
+			// 	name:"尼古拉斯.赵四",
+			// 	comment:"wudi",
+			// 	no:001
+
+			// }
+			// $.post("http://120.78.164.247:8099/manager/category/saveOrUpdateCategory",person,function(results){
+			// 	console.log(results)
+			// })
+			$(".xiaLeft>li>a").click(function(){
+				
+				$(this).css({
+					backgroundColor: "#282830"
+				});
+				
+			})
+		})
+	</script>
+	<script></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 topLeft">
+				<img src="images/logo.png" alt="" class="logo">
+				<span>看点资讯</span>
+		</div>
+		<div class="col-md-10 topRight">
+			<div class="col-md-2 topRight_left">
+				<i class="iconfont icon-liebiao1"></i>
+				<i class="iconfont icon-laba">
+					<sup>0</sup>
+				</i>
+			</div>
+			<div class="col-md-8"></div>
+			<div class="col-md-2 topRightImg">
+				<div>
+					<img src="images/touxiang.png" alt="">
+				</div>
+				<span>乔峰</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<ul class="nav xiaLeft col-xs-2">
+			<li class="active">
+				<a href="#one" data-toggle="tab">
+					<i class="iconfont icon-shouye iconLeft"></i>
+					<span>首页</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#two" data-toggle="tab">
+					<i class="iconfont icon-liebiao iconLeft"></i>
+					<span>栏目管理</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#three" data-toggle="tab">
+					<i class="iconfont icon-zixun iconLeft"></i>
+					<span>资讯管理</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#four" data-toggle="tab">
+					<i class="iconfont icon-user iconLeft"></i>
+					<span>用户管理</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a>
+			</li>
+		</ul>
+		<div class="tab-content xiaRight col-md-10">
+			<div class="tab-pane active" id="one">
+				<div class="row">
+					<ul class="shouyeLeft">
+						<li>
+							<div class="circleDiv">
+								<i class="iconfont icon-yun"></i>
+							</div>
+							<span>99.9%</span>
+						</li>
+						<li>
+							<div class="circleDiv circleDiv2">
+								<i class="iconfont icon-user"></i>
+							</div>
+							<span>117K</span>
+						</li>
+						<li>
+							<div class="circleDiv circleDiv3">
+								<i class="iconfont icon-18"></i>
+							</div>
+				<span>2.470</span>
+						</li>
+					</ul>
+					<div class="shouyeZhong" id="biao">	
+					</div>
+					<ul class="shouyeRight">
+						<li>
+							<div class="contentRight_top">
+								<img src="images/3.jpg" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="contentRight_bottom">
+								<img src="images/4.jpeg" alt="">
+							</div>
+						</li>
+					</ul>
+					<div class="shouyeXial" id="shouyeXial"></div>
+					<div class="shouyeXial">
+						<div class="shouyeXia1">
+						</div>
+						<div class="shouyeXia2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane" id="two">
+				<div class="row">
+					<button class="btn btn-info allbtn" data-toggle="modal" data-target=".modal1">新增</button>
+					<button class="btn btn-success pishan allbtn">批量删除</button>
+					<div class="modal fade modal1">
+					  	<div class="modal-dialog modal-sm">
+						   	<div class="modal-content tankuang">
+								<div class="modal-header">
+									<span>添加栏目</span>
+									 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<form action="">
+										<div class="form-group">
+											<label for="lanmuName" class="control-label">栏目名称：</label>
+											<input type="text" class="form-control" id="lanmuName" value="">
+										</div>
+										 <div class="form-group">
+				            				<label for="message-text" class="control-label">描述：</label>
+				           					 <textarea class="form-control" id="message-text" value="" style="resize: none;"></textarea>
+				          				</div>
+										<div class="form-group">
+											<label for="fuName">父栏目：</label>
+											<select class="form-control" id="fuName">
+												<option value="" selected="">请选择</option>
+											</select>
+										</div>
+									</form>
+
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-default myClose " data-dismiss="modal">关闭</button>
+									<button class="btn btn-danger myClose addData">确认</button>
+								</div>
+							 </div>
+						</div>
+					 </div>
+					<table class="table table-bordered table-striped" style="table-layout: fixed;">
+						<thead>
+							<tr>
+								<td>编号</td>
+								<td>栏目名称</td>
+								<td>父栏目</td>
+								<td>描述</td>
+								<td>操作</td>
+							</tr>
+						</thead>
+						<tbody class="myTbody">
+							<tr class="hidden trr">
+								<td><input type="checkbox" value="" class="fuxuan"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>
+									<i class="glyphicon glyphicon-pencil xiugai"></i>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<i class="glyphicon glyphicon-trash shanchu"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal fade modal2">
+				  <div class="modal-dialog">
+				   <div class="modal-content">
+					<div class="modal-header">
+						修改栏目
+						 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<form action="">
+							<div class="form-group">
+								<label for="lanmuName2" class="control-label">栏目名称：</label>
+								<input type="text" class="form-control" id="lanmuName2" value="">
+							</div>
+							 <div class="form-group">
+	            				<label for="message-text2" class="control-label">描述：</label>
+	           					 <textarea class="form-control" id="message-text2"></textarea>
+	          				</div>
+							<div class="form-group">
+								<label for="fuName2">父栏目：</label>
+								<select class="form-control" id="fuName2">
+									<option value="" selected="">请选择</option>
+								</select>
+							</div>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default myClose " data-dismiss="modal">关闭</button>
+						<button class="btn btn-danger myClose xiugaiQue">确认</button>
+					</div>
+				   </div>
+				  </div>
+				</div>
+			</div>
+			<div class="tab-pane" id="three">
+				<div class="row">
+					<button class="btn btn-info allbtn zixunAdd" data-toggle="modal" data-target=".modal4">新增</button>
+					<button class="btn btn-success allbtn zixunPishan">批量删除</button>
+					<div class="modal fade modal4">
+					  <div class="modal-dialog">
+					   <div class="modal-content zixunContent">
+						<div class="modal-header zixunTitle">
+							<span>发布资讯</span>
+							 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<form action="">
+								<div class="form-group">
+									<label for="title" class="control-label">标题：</label>
+									<input type="text" class="form-control" id="title" value="">
+								</div>
+								<div class="form-group">
+									<label for="zixunParent">所属栏目：</label>
+									<select class="form-control" id="zixunParent">
+										<option value="" selected="">请选择</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="music">音乐：</label>
+									<input type="text" class="form-control" id="music" value="">
+								</div>
+								<div class="form-group list">
+									<label for="">列表样式：</label>
+									<div class="listImg">
+										<div class="listImg_left">
+											<img src="images/1.jpg" alt="">
+											<i class="glyphicon glyphicon-ok hidden"></i>
+										</div>
+										<div class="listImg_right">
+											<img src="images/2.jpg" alt="">
+											<i class="glyphicon glyphicon-ok hidden"></i>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="zixunFile">列表缩略图：</label>
+									<input type="file" class="form-control" id="zixunFile" value="">
+								</div>
+								<div class="form-group">
+									<label for="zhengwen">正文：</label>
+									<textarea class="form-control" id="zhengwen" value=""></textarea>
+								</div>			
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default myClose " data-dismiss="modal">关闭</button>
+							<button class="btn btn-danger myClose zixunQue">确认</button>
+						</div>
+					   </div>
+					  </div>
+					</div>
+						<table class="table table-bordered table-hover" style="table-layout: fixed;">
+							<thead>
+								<tr>
+									<td>编号</td>
+									<td>文章标题</td>
+									<td>所属栏目</td>
+									<td>背景音乐</td>
+									<td>作者</td>
+									<td>发布时间</td>
+									<td>阅读次数</td>
+									<td>操作</td>
+								</tr>
+							<tbody class="myTbody2">
+								<tr class="hidden zixunTr">
+									<td>
+										<input type="checkbox" value="" class="fuxuan2">
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<i class="glyphicon glyphicon-pencil zixunXiugai"></i>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<i class="glyphicon glyphicon-trash zixunShanchu"></i>
+									</td>
+								</tr>
+							</tbody>
+							</thead>
+						</table>
+				</div>
+			</div>
+			<div class="tab-pane" id="four">
+				<div class="row fourContent">
+					<div class="row">
+						<button class="btn btn-success userAdd" data-toggle="modal">新增</button>
+						<div class="modal fade" id="modal3">
+						  <div class="modal-dialog">
+						   <div class="modal-content col-md-10">
+							<div class="modal-header userTitle">
+								<span>修改用户</span>
+								 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<div class="form-group">
+										<label for="userface" class="control-label">头像地址：</label>
+										<input type="text" class="form-control" id="userface" value="">
+									</div>
+									<div class="form-group">
+										<label for="username" class="control-label">用户名：</label>
+										<input type="text" class="form-control" id="username" value="" required>
+									</div>
+									 <div class="form-group">
+										<label for="password" class="control-label">密码：</label>
+										<input type="text" class="form-control" id="password" value="" required>
+									</div>
+									<div class="form-group">
+										<label for="again" class="control-label">重复密码：</label>
+										<input type="text" class="form-control" id="again" value="" required>
+									</div>
+									<div class="form-group">
+										<label for="realname" class="control-label">真实姓名：</label>
+										<input type="text" class="form-control" id="realname" value="" required>
+									</div>
+									<div class="form-group">
+										<label for="email" class="control-label">email：</label>
+										<input type="text" class="form-control" id="email" value="">
+									</div>
+
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-default myClose " data-dismiss="modal">关闭</button>
+								<button class="btn btn-danger myClose userQue">确认</button>
+							</div>
+							</div>
+						   </div>
+						</div>
+					</div>
+					<div class="userHide">
+						<div class="col-md-3 userContent">
+							<div class="touxiang">
+								<img src="images/touxiang.png" alt="">
+							</div>
+						<div class="des">
+							<dl class="dl-horizontal">
+								<dt>用户名</dt>
+								<dd>1</dd>
+								<dt>真实姓名</dt>
+								<dd>1</dd>
+								<!-- <dt>手机号</dt>
+								<dd></dd> -->
+								<dt>email</dt>
+								<dd>1</dd>
+								<dt>状态</dt>
+								<dd>
+									<div class="kaiguan kaione hidden">
+										<div class="kaiguanCircle"></div>
+										<span class="kaion">启动</span>
+									</div>
+									<div class="kaiguan kaitwo">
+										<div class="kaiguanCircle1"></div>
+										<span class="kaioff">关闭</span>
+									</div>
+									<input type="text" class="hidden yincang" value="">
+								</dd>
+							</dl>
+							<button class="btn btn-danger desxiu">修改</button>
+							<button class="btn btn-warning desshan">删除</button>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

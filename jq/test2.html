@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="test2.css">
+	<script src="bootstrap-3.3.0-dist/js/bootstrap.min.js">
+	</script>
+	<link rel="stylesheet" href="iconfont.css">
+	<script src="test2.js"></script>
+	<script src="Highcharts-4.0.1
+	/js/highcharts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-2 leftDiv">
+			<div class="leftDiv_top">
+				<div>
+					<img src="images/logo.png" alt="">
+				</div>
+				<span>看点资讯</span>
+			</div>
+			<ul class="leftDiv_bottom">
+				<li><a href="javascript:void(0)">
+					<i class="iconfont icon-shouye iconLeft"></i>
+					<span>首页</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a></li>
+				<li><a href="javascript:void(0)">
+					<i class="iconfont icon-liebiao iconLeft"></i>
+					<span>栏目管理</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a></li>
+				<li><a href="javascript:void(0)">
+					<i class="iconfont icon-zixun iconLeft"></i>
+					<span>资讯管理</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a></li>
+				<li><a href="javascript:void(0)">
+					<i class="iconfont icon-user iconLeft"></i>
+					<span>用户管理</span>
+					<i class="iconfont icon-kuozhan iconRight"></i>
+				</a></li>
+			</ul>
+		</div>
+		<div class="col-md-10 rightDiv">
+			<div class="rightDiv_top">
+				<div class="col-md-2 rightDivTop_left">
+					<i class="iconfont icon-liebiao1"></i>
+					<i class="iconfont icon-laba">
+						<span>0</span>
+					</i>
+				</div>
+				<div class="col-md-8"></div>
+				<div class="col-md-2 rightDivTop_right">
+					<div>
+						<img src="images/touxiang.png" alt="">
+					</div>
+					<span>乔峰</span>
+				</div>
+			</div>
+			<div class="rightDiv_content">
+				<div class="row fourContent">
+			<button class="btn btn-success userAdd" data-toggle="modal" data-target="#modal3">新增</button>
+			<div class="modal fade" id="modal3">
+			  <div class="modal-dialog">
+			   <div class="modal-content">
+				<div class="modal-header">
+					修改用户
+					 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="form-group">
+							<label for="username" class="control-label">用户名：</label>
+							<input type="text" class="form-control" id="username" value="">
+						</div>
+						 <div class="form-group">
+							<label for="password" class="control-label">密码：</label>
+							<input type="text" class="form-control" id="password" value="">
+						</div>
+						<div class="form-group">
+							<label for="again" class="control-label">重复密码：</label>
+							<input type="text" class="form-control" id="again" value="">
+						</div>
+						<div class="form-group">
+							<label for="realname" class="control-label">真实姓名：</label>
+							<input type="text" class="form-control" id="realname" value="">
+						</div>
+						<div class="form-group">
+							<label for="tel" class="control-label">手机号：</label>
+							<input type="text" class="form-control" id="tel" value="">
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default myClose " data-dismiss="modal">关闭</button>
+					<button class="btn btn-danger myClose">确认</button>
+				</div>
+			</div>
+			</div>
+			</div>
+			<div class="userHide">
+			<div class="col-md-3 userContent">
+				<div class="touxiang">
+					<img src="images/touxiang.png" alt="">
+				</div>
+				<div class="des">
+				<dl class="dl-horizontal">
+					<dt>用户名</dt>
+					<dd>1</dd>
+					<dt>真实姓名</dt>
+					<dd></dd>
+					<!-- <dt>手机号</dt>
+					<dd></dd> -->
+					<dt>email</dt>
+					<dd></dd>
+					<dt>状态</dt>
+					<dd>
+						<div class="kaiguan">
+							<div class="kaiguanCircle"></div>
+							<span></span>
+						</div>
+					</dd>
+				</dl>
+				</div>
+			</div>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
