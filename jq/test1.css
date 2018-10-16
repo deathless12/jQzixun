@@ -1,3 +1,6 @@
+.container{
+	min-width: 1200px;
+}
 .top{
 	border: 1px solid #eee;
 }
@@ -6,6 +9,11 @@
 	float: left;
 	text-align: center;
 	border: 1px solid #eee;
+}
+.topLeft::after,.topRight::after{
+	content: "";
+	clear: both;
+	display: block;
 }
 .topLeft>.logo{
 	width: 38px;
@@ -19,6 +27,8 @@
 .topRight{
 	float: left;
 	border: 1px solid #eee;
+	height: 39px;
+	overflow: hidden;
 }
 .topRight_left>i{
 	line-height: 38px;
@@ -40,6 +50,14 @@
 	color: #fff;
 	text-align: center;
 	line-height: 15px;
+}
+.topRightImg{
+	float: right;
+}
+.topRightImg::after{
+	content: "";
+	clear: both;
+	display: block;
 }
 .topRightImg img{
 	width: 40px;
